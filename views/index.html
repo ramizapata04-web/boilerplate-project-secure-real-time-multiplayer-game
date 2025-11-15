@@ -16,17 +16,14 @@
   <body>
     <header>
       <h1>Secure Real Time Multiplayer Game</h1>
+      <p>Controls: WASD or Arrow Keys | Coin Race</p>
     </header>
+    <div class="rank-display" id="rank-display">Rank: 1/1</div>
     <hr style="margin: 25px" />
-    <div class="container">
-      <canvas 
-        ref="game"
-        id="game-window" 
-        width="640" 
-        height="480"
-      >
-      </canvas>
+    <div class="container"></div>
+      <canvas id="game-window" width="640" height="480"></canvas>
     </div>
   </body>
+  <script src="/socket.io/socket.io.js"></script>
   <script src="../public/game.mjs" type="module"></script>
 </html>
